@@ -1,10 +1,14 @@
 import React from 'react'
 
 function Page({ children, id}) {
-    const pageBg = [] //put bg for each section
+    const pageBg = {
+      hero: 'bg-white',
+      about: 'bg-purple',
+      projects: 'bg-white'}
+     //put bg for each section
 
     return (
-        <section id={id}>
+        <section className={pageBg[id]} id={id}>
           <div className="flex items-center justify-center h-screen">
             {children}
           </div>
