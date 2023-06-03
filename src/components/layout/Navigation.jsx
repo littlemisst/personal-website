@@ -105,7 +105,7 @@ function Navigation() {
 					</button>
 				</div>
 			</div>
-			<div className={`${isOpen ? 'block' : 'hidden'} sm:hidden flex justify-center bg-light-purple drop-shadow-md`} id="mobile-menu">
+			<div className={`${isOpen ? 'block' : 'hidden'} sm:hidden flex justify-center bg-light-purple drop-shadow-md z-50`} id="mobile-menu">
 				<div className="grid justify-items-center px-2 pt-2 pb-3 sm:px-3">
 					{navLinks.map((link) => {
 						return (
