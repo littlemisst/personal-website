@@ -48,7 +48,7 @@ function Navigation() {
 	};
 
 	return (
-		<nav className="fixed py-3 w-full">
+		<nav className="fixed py-3 w-full z-50">
 			<div className="flex justify-between mx-2 sm:mx-12">
 				<div className="flex items-center mr-4">
 					<Link to="hero" smooth={true}>

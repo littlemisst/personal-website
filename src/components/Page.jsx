@@ -1,20 +1,16 @@
 import React from 'react'
+import grid from "../assets/about-grid.png"
 
-function Page({ children, id}) {
-    const pageBg = {
-      hero: 'bg-white',
-      about: 'bg-purple',
-      projects: 'bg-white'}
-     //put bg for each section
+function Page({ children, id }) {
 
-    return (
-        <section className={pageBg[id]} id={id}>
-          <div className="flex items-center justify-center h-screen">
-            {children}
-          </div>
-        </section>
-    
-    )
+  return (
+    <section className={id !== 'about' ? 'bg-white' : 'bg-indigo'} id={id}>
+      <div className="flex items-center justify-center h-screen">
+        {children}
+      </div>
+    </section>
+
+  )
 }
 
 export default Page

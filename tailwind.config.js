@@ -25,6 +25,7 @@ module.exports = {
       'indigo': '#3F3B6C',
       'purple': '#624F82',
       'light-purple': '#9F73AB',
+      'pink': "#E5D1FA",
       'teal': '#A3C7D6',
       'gray-dark': '#AAA8A8',
       'gray': '#8492a6',
