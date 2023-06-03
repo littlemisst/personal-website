@@ -9,7 +9,7 @@ function Hero() {
     <Page
       children={
         <div className='grid grid-cols-12 flex justify-start items-center'>
-          <div className="col-start-4 col-end-8">
+          <div className="col-start-2 sm:col-start-3 lg:col-start-4 col-end-11 md:col-end-8">
             <div className='flex justify-start items-center mb-3 '>
               <span className='text-sm font-nunito font-bold text-gray'>Hello</span><span className="wave ml-2 mb-1">👋</span>
             </div>
@@ -26,7 +26,7 @@ function Hero() {
               </Link>
             </div>
           </div>
-          <div className='hidden sm:block col-start-8 col-end-12'><Spline scene="https://prod.spline.design/zORW-DjtTQQz1CJM/scene.splinecode" /></div>
+          <div className='hidden md:block col-start-8 col-end-12'><Spline scene="https://prod.spline.design/zORW-DjtTQQz1CJM/scene.splinecode" /></div>
         </div>
       }
       id='hero'

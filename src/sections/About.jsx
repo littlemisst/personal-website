@@ -35,13 +35,13 @@ function About() {
         <>
           <div className="w-screen h-screen flex items-center relative">
             <div className="grid grid-cols-12">
-              <div className='flex justify-start sm:mx-8 mb-6 lg:px-16 col-start-2 lg:col-start-3 col-end-8 '>
+              <div className='flex justify-start col-start-2 lg:col-start-3 col-end-8 sm:mx-8 mb-6 lg:px-16'>
                 <span className='text-xs sm:text-sm font-gochi text-pink pt-8'>About Me 👩‍💻</span>
               </div>
-              <div className='sm:mx-8 col-start-2 lg:col-start-3 col-end-12 md:col-end-6 flex justify-start mb-6'>
-                <h1 className='text-4xl md:text-7xl font-gochi text-white md:text-right items-center'>Hey, I'm Teofy Rabanes</h1>
+              <div className='flex justify-start col-start-2 lg:col-start-3 col-end-12 md:col-end-6 sm:mx-8 mb-6'>
+                <h1 className='items-center text-4xl md:text-7xl font-gochi text-white md:text-right'>Hey, I'm Teofy Rabanes</h1>
               </div>
-              <div className='sm:ml-6 col-start-2 md:col-start-7 lg:col-start-6 col-end-11 lg:col-end-10 z-50'>
+              <div className='col-start-2 md:col-start-7 lg:col-start-6 col-end-11 lg:col-end-10 sm:ml-6 z-50'>
                 <p className='text-xs sm:text-sm font-gochi text-white text-left mb-3'>An Overview</p>
                 <p className={`text-xs sm:text-sm font-gochi text-white text-left ${showTechExperience ? 'mb-6' : 'mb-3'}`}>
                   I am a software developer based in Iloilo City, Philippines. I am a problem solver who specializes in frontend development, and also an active member of tech communities.
@@ -62,10 +62,10 @@ function About() {
                 </>}
 
               </div>
-              <div className='col-start-2 md:col-start-3 col-end-11 md:col-end-6 flex md:justify-end mb-6 sm:mx-6 lg:mx-8 mt-6'>
+              <div className='flex md:justify-end col-start-2 md:col-start-3 col-end-11 md:col-end-6 mb-6 sm:mx-6 lg:mx-8 mt-6'>
                 <span className='text-xs sm:text-sm font-gochi text-white text-left md:text-right '>If you want to connect with me, you can find me here👇</span>
               </div>
-              <div className='col-start-2 md:col-start-3 col-end-6 flex md:justify-end mb-6 sm:mx-6 lg:mx-8 z-50'>
+              <div className='flex md:justify-end col-start-2 md:col-start-3 col-end-6 mb-6 sm:mx-6 lg:mx-8 z-50'>
                 <button className="pr-4 " onClick={redirectToGithub}>
                   <FontAwesomeIcon icon={faGithub} bounce style={{ color: "#ffffff", }} />
                 </button>
