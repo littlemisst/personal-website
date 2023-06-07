@@ -73,9 +73,6 @@ function About() {
                 <span className='text-xs sm:text-sm font-gochi text-white text-left md:text-right '>If you want to connect with me, you can find me here👇</span>
               </div>
               <div className='flex md:justify-end col-start-2 md:col-start-3 col-end-6 mb-6 sm:mx-6 lg:mx-8 z-50'>
-                <button className="pr-4 " onClick={redirectToGithub}>
-                  <FontAwesomeIcon icon={faGithub} bounce style={{ color: "#ffffff", }} />
-                </button>
                 <button onClick={redirectToLinkedIn}>
                   <FontAwesomeIcon icon={faLinkedin} bounce style={{ color: "#ffffff", }} />
                 </button>
