@@ -9,9 +9,13 @@ import meDrawing2 from "../assets/about-me-2.png"
 import heartSticker from "../assets/heart-sticker.png"
 import starSticker from "../assets/star-sticker.png"
 
+import data from "../data/data.json"
 
 function About() {
   const [showRandomFact, setShowRandomFact] = useState(false);
+  const [randomFact, setRandomFact] = useState("")
+
+  const aboutData = data.about
 
   const redirectToLinkedIn = () => {
     window.open("https://linkedin.com/in/teofy-rabanes", '_blank')
@@ -21,10 +25,22 @@ function About() {
     window.open("https://github.com/littlemisst", '_blank')
   }
 
-  const handleViewMoreFacts = () => {
-    setShowRandomFact(!showRandomFact)
+  
+
+  const generateRandomFact = () => {
+    const facts = aboutData.facts
+    const factsLength = facts.length
+
+    const randomIndex = Math.floor(Math.random() * factsLength)
+
+    setRandomFact(facts[randomIndex])
   }
 
+  const handleViewMoreFacts = () => {
+    setShowRandomFact(!showRandomFact)
+    generateRandomFact()
+  }
+  
 
   return (
     <Page
@@ -41,15 +57,16 @@ function About() {
               <div className='col-start-2 md:col-start-7 lg:col-start-6 col-end-11 lg:col-end-10 sm:ml-6 z-50'>
                 <p className='text-xs sm:text-sm font-gochi text-pink text-left mb-3'>My Tech Experience<span><img className="wave w-3 ml-3" src={starSticker}/></span></p>
                 <p className={`text-xs sm:text-sm font-gochi text-white text-left ${showRandomFact ? 'mb-6' : 'mb-3'}`}>
-                  I explored full-stack development and gained a good understanding of server-side and client-side technologies. While my focus is on front-end web development, I'm adaptable to different technologies required for projects. Lately, I've been learning and implementing UX principles and enhancing my UI design skills. I'm eager to expand my knowledge in this area.
+                  {aboutData.description} 
                 </p>
                 <button className={`${showRandomFact ? 'hidden' : 'block'} font-gochi text-teal text-sm hover:underline z-50`} onClick={handleViewMoreFacts}>Know More →</button>
                 {showRandomFact && <>
                   <p className='text-xs sm:text-sm font-gochi text-pink text-left mb-3'>Random Fact About Me<span><img className="wave w-3 ml-3" src={heartSticker}/></span></p>
                   <p className='text-xs sm:text-sm font-gochi text-white text-left'>
                     {/* generate a random info here */}
-                    When I was a student, I held leadership roles to build tech communities at my university. I led the Google Developer Student Clubs - CPU chapter in 2019 and currently serve as the Vice President for Programs and Outreach in the DEVCON - Iloilo Chapter.
+                    {randomFact}
                   </p>
+                  <button className={' font-gochi text-teal text-sm hover:underline z-50 mt-3'} onClick={generateRandomFact}>Another Random Fact 🫣</button>
                 </>}
               </div>
               <div className='flex md:justify-end col-start-2 md:col-start-3 col-end-11 md:col-end-6 mb-6 sm:mx-6 lg:mx-8 mt-6'>

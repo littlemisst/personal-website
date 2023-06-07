@@ -1,0 +1,49 @@
+{
+  "about": {
+    "description": "I explored full-stack development and gained a good understanding of server-side and client-side technologies. While my focus is on front-end web development, I'm adaptable to different technologies required for projects. Lately, I've been learning and implementing UX principles and enhancing my UI design skills. I'm eager to expand my knowledge in this area.",
+    "facts": [
+      "Among 7 siblings, all of them are in the medical field and I'm the only one who took an engineering degree.",
+      "When I was a student, I held leadership roles to build tech communities at my university. I led the Google Developer Student Clubs - CPU chapter in 2019 and currently serve as the Vice President for Programs and Outreach in the DEVCON - Iloilo Chapter.",
+      "I don't like drinking coffee.",
+      "My hobbies are listening to kpop, watching true crime documentaries, crochet, and film photography.",
+      "My first dream job is to be an architect.",
+      "My family has 2 dogs --- Waffy, the maltese-shihtzu, and Taco - the toy poodle."
+    ]
+  },
+  "projects": [
+    {
+      "id": 0,
+      "title": "MeDaily 💊",
+      "techStack": [
+        "Flutter",
+        "Firebase"
+      ],
+      "roles": [
+        "UI Designer",
+        "Full-stack Developer"
+      ],
+      "description": "A mobile application that aims to solve the long queuing in hospitals, especially in the Outpatient Department. It enables a user to save files, store daily health logs, add tasks, and keep the user's basic information and important information such as their medical and travel history.The information could be sent to their doctors.",
+      "githubLink": "",
+      "liveLink": ""
+    },
+    {
+      "id": 1,
+      "title": "Tabang: Fire Emergency Response Application 🧑‍🚒",
+      "techStack": [
+        "NodeJS",
+        "PostgreSQL",
+        "Graphql",
+        "React-Typescript",
+        "Apollo Client",
+        "Apache Cordova"
+      ],
+      "roles": [
+        "UI Designer",
+        "Full-stack Developer"
+      ],
+      "description": "A web and mobile application aims to improve the emergency response time of the fire emergency response team, intending to mitigate further damages caused by fire.",
+      "githubLink": "",
+      "liveLink": ""
+    }
+  ]
+}
