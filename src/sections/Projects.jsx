@@ -3,7 +3,9 @@ import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
-import { EffectCards } from "swiper";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import { EffectCards, EffectCoverflow, Pagination } from "swiper";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -11,6 +13,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 import Page from '../components/Page'
+import grid from "../assets/projects-grid.png"
 
 function Projects() {
 
@@ -48,17 +51,17 @@ function Projects() {
             window.open(liveSite, '_blank')
           }}>
 
-            <FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{ color: "#ffffff" }}/>
-            </button>
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{ color: "#ffffff" }} />
+          </button>
         </div>
-        
+
       </div>
     )
   }
   return (
     <Page
       children={
-        <div className="w-screen h-screen flex flex-col items-center justify-center">
+        <div className="w-screen h-screen flex flex-col items-center justify-center relative">
           <div className='mb-6'>
             <span className='text-xs sm:text-sm font-nunito text-gray font-bold'>My Projects 🚀</span>
           </div>
@@ -70,6 +73,7 @@ function Projects() {
               effect={"cards"}
               grabCursor={true}
               modules={[EffectCards]}
+              className="mySwiper"
             >
               <SwiperSlide><CardContent heading="Slide 1" techStack={['html', 'css']} roles={["UI/UX", "Developer"]} description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet orci imperdiet, elementum dui nec, ullamcorper magna. Vestibulum eu aliquet diam. Etiam sem ante, dapibus a neque nec, egestas luctus mi. Fusce vitae consectetur urna, non mattis elit. Nullam aliquam erat eget orci molestie convallis. Ut convallis pellentesque leo, a sodales arcu maximus in." /></SwiperSlide>
               <SwiperSlide>Slide 2</SwiperSlide>
@@ -82,6 +86,11 @@ function Projects() {
               <SwiperSlide>Slide 9</SwiperSlide>
             </Swiper>
           </div>
+          <img
+              className='w-full h-full object-cover absolute'
+              src={grid}
+              alt="grid-bg"
+            />
         </div>
       }
       id='projects'
