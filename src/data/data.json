@@ -33,9 +33,7 @@
         "NodeJS",
         "PostgreSQL",
         "Graphql",
-        "React-Typescript",
-        "Apollo Client",
-        "Apache Cordova"
+        "ReactJS"
       ],
       "roles": [
         "UI Designer",
