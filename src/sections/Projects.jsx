@@ -73,9 +73,12 @@ function Projects() {
           <div className='mb-6'>
             <span className='text-xs sm:text-sm font-nunito text-gray font-bold'>My Projects 🚀</span>
           </div>
-          <div className='mb-6'>
+          <div className='md:mb-6'>
             <span className='text-xl sm:text-2xl font-nunito text-indigo font-bold'>This is what I have so far...</span>
           </div>
+          <div className='block md:hidden mb-6'>
+              <span className='text-xs font-nunito text-gray font-light'>Swipe right to check my projects 👉</span>
+            </div>
           <div className='container'>
             <Swiper
               effect={"cards"}
