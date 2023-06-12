@@ -42,6 +42,36 @@
       "description": "A web and mobile application aims to improve the emergency response time of the fire emergency response team, intending to mitigate further damages caused by fire.",
       "githubLink": "",
       "liveLink": ""
+    },
+    {
+      "id": 2,
+      "title": "Bread Basket 🥐",
+      "techStack": [
+        "Wordpress",
+        "Elementor"
+      ],
+      "roles": [
+        "UX Designer",
+        "Wordpress Developer"
+      ],
+      "description": "A website that showcase the different branches and menu of the restaurant.",
+      "githubLink": "",
+      "liveLink": "https://getbreadbasket.ph/"
+    },
+    {
+      "id": 3,
+      "title": "Bugal sang Kwarto 🗺️",
+      "techStack": [
+        "Wordpress",
+        "Elementor"
+      ],
+      "roles": [
+        "UX/UI Designer",
+        "Wordpress Developer"
+      ],
+      "description": "The fourth district website that shows the different famous landmarks and their details.",
+      "githubLink": "",
+      "liveLink": "https://bugalsangkwarto.ph/"
     }
   ]
 }
